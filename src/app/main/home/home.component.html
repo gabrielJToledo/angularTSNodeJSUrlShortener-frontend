@@ -1,0 +1,21 @@
+<main class="home_container py-5">
+    <div class="wrapper py-3 d-flex justify-content-center align-items-center">
+        <div class="input_container d-flex justify-content-center align-items-center">
+            <input class="input_button rounded px-4 mx-1" placeholder="Encurte seu link aqui..." name="url" [(ngModel)]="currentUrl.url" type="text">
+
+            <button (click)="setUrl()" class="btn btn-dark mx-1">Me encurte!</button>
+        </div>
+    </div>
+
+    <div *ngIf="currentUrl.urlShortened != ''" class="wrapper py-2 d-flex flex-column align-items-center">
+        <div class="urlShortener_container my-2 bg-white d-flex align-items-center justify-content-between px-5">
+            <p class="m-0">{{currentUrl.url}}</p>
+
+            <div class="urlShortener_copy d-flex align-items-center justify-content-center">
+                <p class="m-0 px-4">{{currentUrl.urlShortened}}</p>
+
+                <button type="button" (click)="copyText()" class="px-4 btn btn-outline-dark">Copy</button>
+            </div>
+        </div>
+    </div>
+</main>

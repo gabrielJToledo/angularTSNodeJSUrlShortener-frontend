@@ -1,0 +1,33 @@
+.home_container {
+    height: 100vh;
+    background-color: #cdcdcd;
+}
+
+.input_container {
+    border: 6px solid black;
+    border-radius: 15px;
+    background-image: url(../../../assets/images/bgInput.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 150px;
+    width: 80%;
+}
+
+.input_button {
+    width: 80%;
+    height: 50%;
+    outline: none;
+    border: 3px solid black;
+}
+
+.input_container button {
+    height: 40%;
+}
+
+.urlShortener_container {
+    width: 80%;
+    height: 60px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
